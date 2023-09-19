@@ -61,7 +61,12 @@
 
                         </svg>
                         <span class="flex-1 ml-3 whitespace-nowrap">Daftar Siswa</span>
-
+                        <li>
+                    <a href="<?php echo base_url('admin/siswa'); ?>"
+                        class="block rounded-lg px-2 py-4 text-sm font-medium text-white hover:bg-gray-700">
+                        guru
+                    </a>
+                </li>
                     </a>
                 </li>
 

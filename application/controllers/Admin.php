@@ -16,6 +16,7 @@ class Admin extends CI_Controller
 
  public function index()
  {
+  $data['guru'] = $this->m_model->get_data('guru')->num_rows();
   $data['siswa'] = $this->m_model->get_data('siswa')->num_rows();
   $this->load->view('admin/index');
  }
@@ -24,6 +25,12 @@ class Admin extends CI_Controller
  {
   $data['siswa'] = $this->m_model->get_data('siswa')->result();
   $this->load->view('admin/siswa', $data);
+ }
+
+ public function guru()
+ {
+  $data['guru'] = $this->m_model->get_data('guru')->result();
+  $this->load->view('admin/guru', $data);
  }
  
  public function tambah_siswa()
@@ -83,7 +90,6 @@ class Admin extends CI_Controller
         $this->m_model->delete('siswa', 'id_siswa', $id);
         redirect(base_url('admin/siswa'));
     }
-
 
 }
 
