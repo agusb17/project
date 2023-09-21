@@ -11,13 +11,15 @@ class Auth extends CI_Controller {
  
      
     public function register() { 
-        $this->load->view('auth/register'); 
+        // Tampilkan halaman register 
+  $this->load->view('auth/register');  
     } 
      
     public function index()  
     {  
      $this->load->view('auth/login');  
     }  
+ 
     public function process_login() { 
         $email = $this->input->post('email', true);  
         $password = $this->input->post('password', true);  
@@ -81,7 +83,9 @@ class Auth extends CI_Controller {
             redirect(base_url('auth')); 
         } 
     } 
-     
-     
-        
+    function logout()
+    {
+        $this->session->sess_destroy();
+        redirect(base_url('auth'));
+    }   
 }
