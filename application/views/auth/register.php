@@ -19,7 +19,7 @@ body {
             <h1 class="my-3 text-4xl font-bold" style="color:black"> register</h1>
             <p class="text-sm dark:text-gray-400"></p>
         </div>
-        <form action="<?php echo base_url(); ?>auth/process_register" method="post" class="space-y-12">
+        <form action="<?php echo base_url(); ?>auth/aksi_register" method="post" class="space-y-12">
             <div class="space-y-4">
                 <div>
                     <label for="username" class="block mb-2 text-sm"  style="color:black">username </label>
@@ -43,6 +43,13 @@ body {
                         class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
                         fdprocessedid="3gj54k">
                 </div>
+                <div class="space-y-4">
+                <div>
+                    <label for="role" class="block mb-2 text-sm"  style="color:black">role </label>
+                    <input type="role" name="role" id="role" placeholder=" role" autocomplete="off"
+                        class="w-full px-3 py-2 border rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100"
+                        fdprocessedid="kq4yx">
+                </div>
             </div>
             <div class="space-y-2">
                 <div>
@@ -51,7 +58,7 @@ body {
                         fdprocessedid="r78vz9">register</button>
                 </div>
                 <p class="px-6 text-sm text-center dark:text-gray-400">
-                    <a rel="noopener noreferrer" href="<?php echo base_url('auth'); ?>" class="hover:underline dark:text-violet-400" style="color:black">daftar</a>.
+                    <a rel="noopener noreferrer" href="<?php echo base_url('auth'); ?>" class="hover:underline dark:text-violet-400" style="color:black">DAFTAR DISINI!!!</a>.
                 </p>
         </form>
                 </p>
